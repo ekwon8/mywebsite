@@ -17,6 +17,23 @@
   .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s cubic-bezier(.22,.61,.36,1), transform .7s cubic-bezier(.22,.61,.36,1); }
   .reveal.in { opacity: 1; transform: none; }
   @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+  @media (max-width: 860px) {
+    [style*="max-content) 220px"] { grid-template-columns: 1fr !important; gap: 26px !important; }
+    img[alt="Eun Joo Kwon"] { width: 132px !important; height: 136px !important; }
+    h1 { font-size: clamp(34px, 9vw, 62px) !important; max-width: none !important; }
+    [style*="90px 1fr"] { grid-template-columns: 1fr !important; gap: 8px !important; }
+    [style*="auto 1fr"] { grid-template-columns: 1fr !important; gap: 12px !important; }
+    h3[style*="390px"] { width: auto !important; white-space: normal !important; font-size: 22px !important; }
+    [style*="1fr 220px"] { grid-template-columns: 1fr !important; gap: 18px !important; }
+    [style*="190px 1fr"] { grid-template-columns: 1fr !important; gap: 8px !important; }
+    [style*="padding: 80px 32px"], [style*="padding: 96px 32px"] { padding-left: 20px !important; padding-right: 20px !important; }
+    [style*="padding: 18px 32px"] { padding: 14px 20px !important; flex-wrap: wrap !important; gap: 12px !important; }
+    [style*="padding: 44px"] { padding: 26px !important; }
+    [style*="padding: 34px"] { padding-left: 0 !important; padding-right: 0 !important; }
+    section { min-height: 0 !important; }
+    p, li { font-size: 16px !important; }
+  }
 </style>
 </helmet>
 <div style="background: #EDEEE9; font-family: 'Space Grotesk', system-ui, sans-serif;">
@@ -36,11 +53,11 @@
   </nav>
 
   <section style="min-height: 88vh; display: flex; align-items: center; padding: 80px 32px;">
-    <div style="max-width: 1120px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 220px; gap: 56px; align-items: start;">
+    <div style="max-width: 1120px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: minmax(0, max-content) 220px; gap: 28px; align-items: start; justify-content: start;">
       <div>
       <div class="reveal in" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #35635A; margin-bottom: 26px;">Open to data &amp; research roles · Atlanta, GA</div>
       <h1 class="reveal in" style="font-size: 62px; font-weight: 500; line-height: 1.08; letter-spacing: -0.035em; margin: 0 0 30px; max-width: 22ch; text-wrap: pretty;"><span style="font-weight: 600;">Hi</span>, I'm Eun Joo Kwon</h1>
-      <p class="reveal in" style="font-size: 21px; line-height: 1.6; color: #4C534F; margin: 0 0 40px; max-width: 58ch; text-wrap: pretty; height: 134px">Public finance researcher by trainning. Happiest when digging into messy data. 7+ years of experience working with local finance, education, and administrative datasets. Currently living in Atlanta, GA with cats named Brighton and Tabitha, occasionally visited by Bjorn.</p>
+      <p class="reveal in" style="font-size: 21px; line-height: 1.6; color: #4C534F; margin: 0 0 40px; max-width: 58ch; text-wrap: pretty;">Public finance researcher by trainning. Happiest when digging into messy data. 7+ years of experience working with local finance, education, and administrative datasets. Currently living in Atlanta, GA with cats named Brighton and Tabitha, occasionally visited by Bjorn.</p>
       <div class="reveal in" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
         <span style="display: inline-block; background: #FFFFFF; border: 1px solid #D5D9D2; padding: 13px 24px; border-radius: 26px; font-size: 15px; color: #1D2321;">R</span>
         <span style="display: inline-block; background: #FFFFFF; border: 1px solid #D5D9D2; padding: 13px 24px; border-radius: 26px; font-size: 15px; color: #1D2321;">SQL</span>
@@ -51,7 +68,7 @@
         <span style="display: inline-block; background: #FFFFFF; border: 1px solid #D5D9D2; padding: 13px 24px; border-radius: 26px; font-size: 15px; color: #1D2321;">Qualtrics</span>
       </div>
       <div style="margin-top: 76px; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: #9AA29C;">Scroll ↓</div>
-      </div><img src="uploads/3_background_white.jpeg" alt="Eun Joo Kwon" class="reveal in" style="width: 220px; height: 228px; border-radius: 999px; object-fit: cover; object-position: 50% 18%; border: 1px solid #D5D9D2; display: block; position: absolute; left: 1014px; top: 313px">
+      </div><img src="uploads/3_background_white.jpeg" alt="Eun Joo Kwon" class="reveal in" style="width: 220px; height: 228px; border-radius: 999px; object-fit: cover; object-position: 50% 18%; border: 1px solid #D5D9D2; display: block;">
       
     </div>
   </section>
