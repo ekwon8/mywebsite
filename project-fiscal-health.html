@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #EDEEE9; color: #1D2321; -webkit-font-smoothing: antialiased; }
+  a { color: #1D2321; text-decoration: none; }
+  a:hover { color: #35635A; }
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #EDEEE9; font-family: 'Space Grotesk', system-ui, sans-serif; padding: 28px;">
+  <div style="max-width: 1120px; margin: 0 auto; display: grid; gap: 16px;">
+
+    <nav style="display: flex; justify-content: space-between; align-items: center; background: #FFFFFF; border-radius: 14px; padding: 16px 24px; font-size: 14.5px;">
+      <a href="index.html" style="font-weight: 600;">Eun Joo Kwon, PhD.</a>
+      <div style="display: flex; gap: 22px; align-items: center;">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="cv.html">CV</a>
+        <a href="https://www.linkedin.com/in/eun-joo-kwon-ph-d-7048ba14a/" target="_blank" rel="noopener" title="LinkedIn" style="display: inline-flex; align-items: center;" style-hover="opacity: 0.62;"><img src="uploads/original/InBug-Black.png" alt="LinkedIn" style="height: 17px; width: auto; display: block;" /></a>
+      </div>
+    </nav>
+
+    <div style="background: #FFFFFF; border-radius: 14px; padding: 48px 44px;">
+      
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #35635A; margin-bottom: 18px;">Dissertation · Chapter II</div>
+      <h1 style="font-size: 34px; font-weight: 500; line-height: 1.22; letter-spacing: -0.025em; margin: 0 0 18px; max-width: 34ch; text-wrap: pretty;">Impact of Charter School Competition on School District Financial Conditions</h1>
+      <p style="font-size: 16.5px; line-height: 1.7; color: #4C534F; margin: 0; max-width: 68ch; text-wrap: pretty;">How local and state charter school competition reshape the financial condition of Georgia's traditional public school districts (TPSDs), 2014–15 through 2018–19.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: stretch;">
+      <div style="background: #FFFFFF; border-radius: 14px; padding: 36px 34px;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A918D; margin-bottom: 20px;">Data</div>
+        <p style="font-size: 15.5px; line-height: 1.7; color: #4C534F; margin: 0;">Georgia Milestones EOG Lexile scores (GOSA), charter school annual reports (GADOE, NCES), district financial and demographic data (NCES, GOSA), property tax digests (GAAO), ACS 5-year estimates, teacher cost index (CWIFT), and BLS wage data — merged into a district-year panel.</p>
+      </div>
+      <div style="background: #FFFFFF; border-radius: 14px; padding: 36px 34px;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A918D; margin-bottom: 20px;">Methods</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #F4F5F1; color: #46524C; padding: 6px 13px; border-radius: 16px;">2SLS / instrumental variables</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #F4F5F1; color: #46524C; padding: 6px 13px; border-radius: 16px;">District &amp; year fixed effects</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #F4F5F1; color: #46524C; padding: 6px 13px; border-radius: 16px;">Four financial-condition indicators</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-radius: 14px; padding: 44px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A918D; margin-bottom: 20px;">Findings</div>
+      <p style="font-size: 15.5px; line-height: 1.75; color: #4C534F; margin: 0; max-width: 78ch; text-wrap: pretty;">Local and state charter competition significantly reshape TPSD financial condition, with different effects by funding design. Local charter competition (2SLS) is associated with a $10.19 per-pupil decrease in the own-source revenue gap and a similar decline in the fiscal gap — districts respond by drawing down revenue reserves rather than raising expenditures. State charter competition improves the own-source revenue gap but widens the fiscal gap through declines in intergovernmental aid, with districts holding expenditures steady by leaning harder on the local tax base. Georgia's state funding system amplifies these fiscal externalities rather than neutralizing them.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-radius: 14px; padding: 44px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A918D; margin-bottom: 22px;">Visualization</div>
+      <div style="background: #F4F5F1; border: 1px dashed #C9CFC8; border-radius: 12px; min-height: 420px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; padding: 40px;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: #8A918D;">tableau / power bi embed</div>
+        <div style="font-size: 15px; color: #5B625E; max-width: 44ch; line-height: 1.6;">Send me the published dashboard link and I will embed it here at full width.</div>
+      </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-radius: 14px; padding: 34px 44px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap;">
+      <a href="research.html" style="font-size: 15px; color: #35635A;">← All research</a>
+      <a href="mailto:nkarma0508@gmail.com" style="background: #35635A; color: #FFFFFF; padding: 11px 20px; border-radius: 22px; font-size: 14.5px;" style-hover="background: #1D2321; color: #FFF;">Email me</a>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
