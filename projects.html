@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #EDEEE9; color: #1D2321; -webkit-font-smoothing: antialiased; }
+  a { color: #1D2321; text-decoration: none; }
+  a:hover { color: #35635A; }
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s cubic-bezier(.22,.61,.36,1), transform .7s cubic-bezier(.22,.61,.36,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+
+  @media (max-width: 860px) {
+    [style*="max-content) 220px"], [style*="max-content 220px"] { grid-template-columns: 1fr !important; gap: 22px !important; }
+    img[alt="Eun Joo Kwon"] { order: -1 !important; width: 120px !important; height: 124px !important; }
+    h1 { font-size: clamp(32px, 8.6vw, 62px) !important; max-width: none !important; }
+    [style*="90px 1fr"] { grid-template-columns: 1fr !important; gap: 6px !important; }
+    [style*="auto 1fr"], [style*="340px 1fr"] { grid-template-columns: 1fr !important; gap: 12px !important; }
+    h3[style*="390px"] { width: auto !important; white-space: normal !important; font-size: 21px !important; }
+    [style*="1fr 220px"], [style*="150px 1fr"], [style*="190px 1fr"], [style*="1fr 1fr"] { grid-template-columns: 1fr !important; gap: 12px !important; }
+    [style*="padding: 80px 32px"], [style*="padding: 96px 32px"], [style*="padding: 110px 32px"] { padding-left: 20px !important; padding-right: 20px !important; padding-top: 56px !important; padding-bottom: 56px !important; }
+    [style*="padding: 18px 32px"], [style*="padding: 16px 24px"] { padding: 13px 18px !important; flex-wrap: wrap !important; gap: 12px !important; }
+    [style*="padding: 48px 44px"], [style*="padding: 40px 44px"], [style*="padding: 36px 34px"], [style*="padding: 34px 44px"], [style*="padding: 30px 34px"], [style*="padding: 28px 34px"], [style*="padding: 44px"] { padding: 26px 22px !important; }
+    [style*="padding: 34px 0"] { padding-left: 0 !important; padding-right: 0 !important; }
+    [style*="min-height: 420px"] { min-height: 240px !important; padding: 22px !important; }
+    [style*="font-family: 'Space Grotesk', system-ui, sans-serif; padding: 28px"] { padding: 14px !important; }
+    section { min-height: 0 !important; }
+    [data-hint] { display: none !important; }
+    [style*="border-bottom: 1px solid rgb(223, 225, 219)"][style*="cursor: pointer"], [style*="border-bottom: 1px solid #DFE1DB"][style*="cursor: pointer"] { padding-bottom: 0 !important; margin-bottom: 0 !important; border-bottom: none !important; }
+    [style*="minmax(0px, 258px)"], [style*="minmax(0, 258px)"], [style*="minmax(0px, 152px)"], [style*="minmax(0, 152px)"] { grid-template-columns: 1fr !important; gap: 8px !important; }
+    [style*="font-size: 31px"] { font-size: 23px !important; line-height: 1.22 !important; }
+    [style*="font-size: 27px"] { font-size: 22px !important; }
+    [style*="gap: 26px"] { gap: 20px !important; }
+    [style*="margin-bottom: 22px"] { gap: 10px 14px !important; }
+    [style*="padding-bottom: 18px"] { padding-bottom: 14px !important; margin-bottom: 18px !important; gap: 14px !important; }
+    [style*="width: 1000px"], [style*="width:1000px"] { width: auto !important; }
+    p, div, li { min-width: 0 !important; }
+    p, li { font-size: 16px !important; }
+  }
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #EDEEE9; font-family: 'Space Grotesk', system-ui, sans-serif; padding: 28px;">
+  <div style="max-width: 1120px; margin: 0 auto; display: grid; gap: 16px;">
+
+    <nav style="display: flex; justify-content: space-between; align-items: center; background: #FFFFFF; border-radius: 14px; padding: 16px 24px; font-size: 14.5px;">
+      <a href="index.html" style="font-weight: 500; font-size: 18px; letter-spacing: -0.01em;">Eun Joo Kwon, PhD</a>
+      <div style="display: flex; gap: 22px; align-items: center;">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="https://www.linkedin.com/in/eun-joo-kwon-ph-d-7048ba14a/" target="_blank" rel="noopener" title="LinkedIn" style="display: inline-flex; align-items: center; opacity: 1;" style-hover="opacity: 0.62;"><img src="uploads/original/InBug-Black.png" alt="LinkedIn" style="height: 17px; width: auto; display: block;"></a>
+        <a href="https://github.com/ekwon8" target="_blank" rel="noopener" title="GitHub" style="display: inline-flex; align-items: center;" style-hover="opacity: 0.62;"><img src="uploads/GitHub_Invertocat_Black.png" alt="GitHub" style="height: 19px; width: 19px; object-fit: contain; display: block;"></a>
+        <a href="https://scholar.google.com/citations?user=MhNlyOIAAAAJ&amp;hl=en" target="_blank" rel="noopener" title="Google Scholar" style="display: inline-flex; align-items: center;" style-hover="opacity: 0.62;"><img src="uploads/icons8-google-scholar-96.png" alt="Google Scholar" style="height: 23px; width: 23px; object-fit: contain; display: block;"></a>
+      </div>
+    </nav>
+
+    
+
+    <div style="background: #FFFFFF; border-radius: 14px; padding: 44px; color: #1D2321;">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; border-bottom: 1px solid #DFE1DB; padding-bottom: 18px; margin-bottom: 26px;">
+        <div style="max-width: 640px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A918D; margin-bottom: 8px;">Summary of Dissertation (Kwon, 2026)</div>
+          <h2 style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 31px; font-weight: 600; line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 8px;">From raw source to model variables</h2>
+          <p style="font-size: 13.5px; line-height: 1.5; color: #4C534F; margin: 0; text-wrap: pretty;">Hover over (or tap) any source or variable to see which items it connects to. Colored squares in each data source indicate which chapter the dataset is used in (Chapter II, III, or IV)</p>
+        </div>
+        <div style="display: flex; gap: 26px; flex-shrink: 0;">
+          <div>
+            <div style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 27px; font-weight: 600; line-height: 1;">{{ nSrc }}</div>
+            <div style="font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: #8A918D; margin-top: 2px;">sources</div>
+          </div>
+          <div>
+            <div style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 27px; font-weight: 600; line-height: 1;">{{ nVar }}</div>
+            <div style="font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: #8A918D; margin-top: 2px;">variables</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-bottom: 22px; font-size: 11.5px; color: #4C534F;">
+        <div style="display: flex; align-items: center; gap: 6px;"><span style="width: 7px; height: 7px; border-radius: 1px; background: #7F77DD; display: inline-block;"></span>Chapter II</div>
+        <div style="display: flex; align-items: center; gap: 6px;"><span style="width: 7px; height: 7px; border-radius: 1px; background: #D85A30; display: inline-block;"></span>Chapter III</div>
+        <div style="display: flex; align-items: center; gap: 6px;"><span style="width: 7px; height: 7px; border-radius: 1px; background: #1D9E75; display: inline-block;"></span>Chapter IV</div>
+        <div style="display: flex; align-items: center; gap: 6px; padding-left: 4px;"><span style="width: 7px; height: 7px; border-radius: 1px; background: #DFE1DB; display: inline-block;"></span>not used</div>
+        <div style="margin-left: auto; display: flex; align-items: center; gap: 10px;">
+          <span data-hint="1" style="color: #8A918D;">{{ hint }}</span>
+          <button onClick="{{ clear }}" style="font-family: inherit; font-size: 11px; color: #4C534F; background: #F4F5F1; border: 1px solid #DFE1DB; border-radius: 3px; padding: 4px 9px; cursor: pointer;" style-hover="background: #E6EBE6;">Reset</button>
+        </div>
+      </div>
+
+      <div onMouseLeave="{{ onLeave }}" style="display: grid; grid-template-columns: minmax(0, 258px) minmax(0, 1fr); gap: 36px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 7px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A918D; padding-bottom: 4px;">Data Sources</div>
+          <sc-for list="{{ sources }}" as="s" hint-placeholder-count="12">
+            <div onMouseEnter="{{ s.enter }}" onClick="{{ s.click }}" style="background: #FFFFFF; border: 1px solid #E6EBE6; border-radius: 4px; padding: 8px 10px; cursor: pointer; transition: opacity .18s, border-color .18s, box-shadow .18s; opacity: {{ s.op }}; border-color: {{ s.bd }}; box-shadow: {{ s.sh }};" style-hover="border-color: #C9CFC8;">
+              <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 8px;">
+                <div style="font-size: 12.5px; font-weight: 600; line-height: 1.25; color: #1D2321;">{{ s.n }}</div>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #9AA29C; flex-shrink: 0;">{{ s.count }}</div>
+              </div>
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 3px;">
+                <div style="font-size: 10.5px; line-height: 1.35; color: #8A918D;">{{ s.d }}</div>
+                <div style="display: flex; gap: 3px; flex-shrink: 0;">
+                  <sc-for list="{{ s.dots }}" as="d" hint-placeholder-count="3">
+                    <span style="width: 6px; height: 6px; border-radius: 1px; background: {{ d.c }};"></span>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 11px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A918D; padding-bottom: 4px;">Model variables</div>
+          <sc-for list="{{ essays }}" as="e" hint-placeholder-count="3">
+            <div style="background: #FFFFFF; border: 1px solid #E6EBE6; border-left: 3px solid {{ e.c }}; border-radius: 4px; padding: 14px 16px 12px; transition: opacity .18s; box-shadow: 0 1px 0 rgba(26,24,21,0.03); opacity: {{ e.op }};">
+              <div onMouseEnter="{{ e.enter }}" onClick="{{ e.click }}" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; padding-bottom: 9px; margin-bottom: 11px; border-bottom: 1px solid #DFE1DB; cursor: pointer;">
+                <div style="font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 17px; font-weight: 600; line-height: 1.1;">{{ e.name }}</div>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #8A918D;">{{ e.spec }}</div>
+                <div style="margin-left: auto; display: flex; align-items: center; gap: 9px; flex-shrink: 0;">
+                  <span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: #9AA29C;">{{ e.n }}</span>
+                  <span style="font-family: 'JetBrains Mono', monospace; font-size: 15px; line-height: 1; color: #8A918D; text-align: center;">{{ e.caret }}</span>
+                </div>
+              </div>
+              <div style="flex-direction: column; gap: 9px; display: {{ e.disp }};">
+                <sc-for list="{{ e.gs }}" as="g" hint-placeholder-count="4">
+                  <div style="display: grid; grid-template-columns: minmax(0, 152px) minmax(0, 1fr); gap: 14px; align-items: start;">
+                    <div style="font-size: 10.5px; line-height: 1.3; letter-spacing: 0.04em; text-transform: uppercase; color: #8A918D; padding-top: 3px;">{{ g.r }}</div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+                      <sc-for list="{{ g.v }}" as="v" hint-placeholder-count="6">
+                        <span onMouseEnter="{{ v.enter }}" style="font-size: 11px; line-height: 1.4; padding: 3px 7px; border-radius: 3px; border: 1px solid transparent; transition: background .15s, color .15s, border-color .15s; background: {{ v.bg }}; color: {{ v.fg }}; border-color: {{ v.bd }};">{{ v.name }}</span>
+                      </sc-for>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 4px; margin: 24px 0 0; max-width: 760px; border-top: 1px solid #DFE1DB; padding-top: 12px; font-size: 11.5px; line-height: 1.5; color: #8A918D; text-wrap: pretty;">
+        <div>1 State aid: state revenues/total income in the district</div>
+        <div>2 Tax price: median housing price/per pupil property values (100% equalized assessed value)</div>
+        <div>3 Administrative Capacity: the number of district administrators per 1,000 pupils</div>
+      </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-radius: 14px; padding: 44px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #8A918D; margin-bottom: 26px;">Dissertation chapters / Visualization</div>
+      <div style="display: grid; gap: 16px;">
+
+        <a href="project-fiscal-health.html" style="display: block; background: #F4F5F1; border-radius: 12px; padding: 30px; color: #1D2321;" style-hover="background: #E6EBE6; color: #1D2321;">
+          
+          <h2 style="font-size: 22px; font-weight: 500; line-height: 1.3; letter-spacing: -0.015em; margin: 0 0 12px;">Georgia School District Financial Conditions</h2>
+          <p style="font-size: 15.5px; line-height: 1.7; color: #4C534F; margin: 0 0 16px; max-width: 74ch; text-wrap: pretty;">How does charter competition affect the financial condition of Georgia traditional public school districts? Using an instrumental variables strategy on 2015–2019 data and four need-capacity indicators, this chapter finds that charter school impacts are far from uniform: the financial consequences depend heavily on policy design (state vs. local charter schools) and district context (city vs. non-city districts).</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">Instrumental variables</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">Local government financial condition</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">Need-capacity indicator</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">Georgia</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">2015–2019</span>
+          </div>
+        </a>
+
+        <a href="project-borrowing-costs.html" style="display: block; background: #F4F5F1; border-radius: 12px; padding: 30px; color: #1D2321;" style-hover="background: #E6EBE6; color: #1D2321;">
+          
+          <h2 style="font-size: 22px; font-weight: 500; line-height: 1.3; letter-spacing: -0.015em; margin: 0 0 12px;">School District Borrowing Costs</h2>
+          <p style="font-size: 15.5px; line-height: 1.7; color: #4C534F; margin: 0 0 16px; max-width: 74ch; text-wrap: pretty;">Does charter entry raise borrowing costs for school districts? Using a national panel of 2011–2019 general obligation bonds and a Heckman selection model, this research quantifies the penalty of charter competition in the bond market: about $15,700 in additional annual interest cost, which is about $314,000 in added costs over a 20-year bond lifespan.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">Heckman two-step</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">General obligation bonds</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">True Interest Costs</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">United States</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">2011–2019</span>
+          </div>
+        </a>
+
+        <a href="project-education-outcomes.html" style="display: block; background: #F4F5F1; border-radius: 12px; padding: 30px; color: #1D2321;" style-hover="background: #E6EBE6; color: #1D2321;">
+          
+          <h2 style="font-size: 22px; font-weight: 500; line-height: 1.3; letter-spacing: -0.015em; margin: 0 0 12px;">Education Outcomes in Georgia</h2>
+          <p style="font-size: 15.5px; line-height: 1.7; color: #4C534F; margin: 0 0 16px; max-width: 74ch; text-wrap: pretty;">Did Georgia's charter system reform improve district outcomes? Using 172 districts from 2004–2014 and a staggered synthetic difference-in-differences design, the reform shows little effect on state standardized test passing rates. Incentives and regulatory flexibility alone did not improve school district performance.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">Synthetic DiD</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">State test outcomes</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">Georgia</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #E6EBE6; color: #46524C; padding: 6px 13px; border-radius: 16px;">2004–2014</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-radius: 14px; padding: 34px 44px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap;">
+      <div style="font-size: 15.5px; color: #4C534F;">Happy to talk through any of this in more detail.</div>
+      <a href="mailto:hello@eunjookwon.com" style="background: #35635A; color: #FFFFFF; padding: 11px 20px; border-radius: 22px; font-size: 14.5px;" style-hover="background: #1D2321; color: #FFF;">Email me</a>    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const EC = { e1: "#7F77DD", e2: "#D85A30", e3: "#1D9E75" };
+const EORDER = ["e1", "e2", "e3"];
+const PALE = "#DFE1DB";
+
+const SRC = [
+  { id: "ccd", n: "NCES CCD / ELSI", d: "Student, district characteristics", to: [] },
+  { id: "f33", n: "NCES CCD / F33", d: "School district finances", to: [] },
+  { id: "cpi", n: "BLS / CPI-U", d: "Deflator for dollar values only", to: [] },
+  { id: "gosa", n: "GADOE & GOSA", d: "GA school district characteristics, finance, and performance", to: [] },
+  { id: "acs", n: "Census / ACS 5-year", d: "Social, demographic, housing, and economic characteristics", to: [] },
+  { id: "digest", n: "GADOR / Tax Digest", d: "Sale Ratio Study", to: [] },
+  { id: "cwift", n: "NCES / CWIFT", d: "Comparable teacher wage index", to: [] },
+  { id: "saipe", n: "Census / SAIPE", d: "Child poverty", to: [] },
+  { id: "seda", n: "SEDA 6.0", d: "Student achievement, standardized for national comparison", to: [] },
+  { id: "mergent", n: "Mergent + Moody's", d: "Bond characteristics", to: [] },
+  { id: "ipreo", n: "IPREO", d: "True interest costs", to: [] },
+  { id: "bbuyer", n: "Bond Buyer (Bloomberg Terminal)", d: "BB 20-Bond GO Index", to: [] }
+];
+
+const ES = [
+  { id: "e1", name: "Chapter II", spec: "Instrument variables · How should the financial condition of school districts be measured? How does charter school competition harm/improve it?", gs: [
+    { r: "Outcome", v: [["Own-source revenue gap", "f33 digest gosa cwift acs cpi"], ["Fiscal gap", "f33 digest gosa cwift acs cpi"], ["Revenue reserve", "f33 digest gosa cwift acs cpi"], ["Expenditure pressure", "f33 digest gosa cwift acs cpi"]] },
+    { r: "Treatment (Endogenous)", v: [["Local charter enrollment (%)", "ccd"], ["State charter enrollment (%)", "gosa"]] },
+    { r: "Instruments", v: [["Local charter instrument", "ccd"], ["State charter instrument", "gosa"]] },
+    { r: "Controls", v: [["End-of-Grade (EOG) reading scores (LEXILE)", "gosa"], ["Teacher wage (CWIFT)", "cwift"], ["Free-reduced lunch students (%)", "gosa"], ["English learners (%)", "gosa"], ["Special education students (%)", "gosa"], ["Enrollment", "ccd"], ["Enrollment squared", "ccd"], ["College graduate (%)", "acs"], ["Senior population (%)", "acs"], ["Owner-occupied housing (%)", "acs"], ["Tax price", "digest cpi"], ["State aid", "f33 cpi"], ["Charter system", "gosa"], ["SWSS", "gosa"], ["Local charter (#)", "ccd"], ["State charter (#)", "gosa"]] }
+  ] },
+  { id: "e2", name: "Chapter III", spec: "Heckman two-step correction · Is competition from charter schools perceived as a credit risk to school districts in the bond market?", gs: [
+    { r: "Outcome", v: [["True interest cost", "ipreo"]] },
+    { r: "Treatment", v: [["Charter school entry", "ccd"], ["Charter school (%)", "ccd"], ["Charter enrollment (%)", "ccd"]] },
+    { r: "District characteristics", v: [["Enrollment", "ccd"], ["Enrollment trend", "ccd"], ["Minority students (%)", "ccd"], ["Children in poverty (%)", "saipe"], ["Own-source revenue (%)", "ccd"], ["Total revenue (per pupil)", "f33 cpi"], ["Interest payment", "f33"], ["Administrative capacity", "ccd"], ["Test score (index)", "seda"]] },
+    { r: "Bond characteristics", v: [["Years to maturity", "mergent"], ["Total offering amount", "mergent cpi"], ["Call provision", "mergent"], ["Competitive sale", "mergent"], ["Bank qualified", "mergent"], ["Refunding bond", "mergent"], ["Federal tax-exempt", "mergent"], ["State tax-exempt", "mergent"], ["Credit enhanced", "mergent"], ["Insured", "mergent"], ["Bond Buyer index", "bbuyer"]] },
+    { r: "Exclusion restriction", v: [["Grandparents responsible for their grandchildren (%)", "acs"]] }
+  ] },
+  { id: "e3", name: "Chapter IV", spec: "Staggered synthetic difference-in-differences (SDID) · Does the charter school framework work for school districts?", gs: [
+    { r: "Outcomes", v: [["Reading score (grade 3, 5, 8)", "gosa"], ["Math score (grade 3, 5, 8)", "gosa"]] },
+    { r: "Treatment", v: [["Charter system", "gosa"]] }
+  ] }
+];
+
+const USES = {};
+ES.forEach((e) => e.gs.forEach((g) => g.v.forEach((v) =>
+  v[1].split(" ").forEach((src) => { (USES[src] = USES[src] || {})[e.id] = 1; })
+)));
+SRC.forEach((src) => { src.to = EORDER.filter((k) => USES[src.id] && USES[src.id][k]); });
+
+function varCountFor(id) {
+  let n = 0;
+  ES.forEach((e) => e.gs.forEach((g) => g.v.forEach((v) => {
+    if (v[1].split(" ").indexOf(id) > -1) n++;
+  })));
+  return n;
+}
+
+class Component extends DCLogic {
+  state = { pinned: null, active: null, narrow: false, open: null };
+
+  hover(kind, id) { if (!this.state.pinned) this.setState({ active: { kind, id } }); }
+
+  pin(kind, id) {
+    const p = this.state.pinned;
+    if (p && p.kind === kind && p.id === id) this.setState({ pinned: null, active: { kind, id } });
+    else this.setState({ pinned: { kind, id } });
+  }
+
+  renderVals() {
+    const sel = this.state.pinned || this.state.active;
+    const kind = sel ? sel.kind : null;
+    const id = sel ? sel.id : null;
+    const totalVars = ES.reduce((a, e) => a + e.gs.reduce((b, g) => b + g.v.length, 0), 0);
+    const srcById = {};
+    SRC.forEach((s) => { srcById[s.id] = s; });
+
+    const hint = this.state.pinned
+      ? (kind === "src" ? srcById[id].n + " pinned · Esc to clear" : "Chapter pinned · Esc to clear")
+      : "Hover to trace · click to pin";
+
+    const sources = SRC.map((s) => {
+      let on = true;
+      if (kind === "src") on = s.id === id;
+      else if (kind === "es") on = s.to.indexOf(id) > -1;
+      const lead = kind === "src" && on;
+      return {
+        n: s.n, d: s.d, count: varCountFor(s.id),
+        op: kind ? (on ? 1 : 0.26) : 1,
+        bd: lead ? "#B7ADFF" : "#E6EBE6",
+        sh: lead ? "0 0 0 2px rgba(127,119,221,0.16)" : "0 1px 0 rgba(26,24,21,0.03)",
+        dots: EORDER.map((k) => ({ c: s.to.indexOf(k) > -1 ? EC[k] : PALE })),
+        enter: () => this.hover("src", s.id),
+        click: () => this.pin("src", s.id)
+      };
+    });
+
+    const essays = ES.map((e) => {
+      const eon = kind === "es" ? e.id === id
+        : kind === "src" ? srcById[id].to.indexOf(e.id) > -1 : true;
+      return {
+        name: e.name, spec: e.spec, c: EC[e.id],
+        op: kind ? (eon ? 1 : 0.4) : 1,
+        n: this.state.narrow ? e.gs.reduce((a, g) => a + g.v.length, 0) + " vars" : "",
+        disp: this.state.narrow && this.state.open !== e.id ? "none" : "flex",
+        caret: this.state.narrow ? (this.state.open === e.id ? "\u2013" : "+") : "",
+        enter: () => this.hover("es", e.id),
+        click: () => {
+          if (this.state.narrow) this.setState((st) => ({ open: st.open === e.id ? null : e.id }));
+          else this.pin("es", e.id);
+        },
+        gs: e.gs.map((g) => ({
+          r: g.r,
+          v: g.v.map((v) => {
+            const srcs = v[1].split(" ");
+            const von = kind === "src" && srcs.indexOf(id) > -1;
+            const voff = kind && !von;
+            return {
+              name: v[0],
+              bg: von ? "#EFEBFF" : "#F4F5F1",
+              fg: von ? "#4A3B9E" : (voff ? "#A6ADA7" : "#46524C"),
+              bd: von ? "#C9C2F5" : "transparent",
+              enter: () => this.hover("src", srcs[0])
+            };
+          })
+        }))
+      };
+    });
+
+    return {
+      nSrc: SRC.length, nVar: totalVars, hint, sources, essays,
+      clear: () => this.setState({ pinned: null, active: null }),
+      onLeave: () => { if (!this.state.pinned) this.setState({ active: null }); }
+    };
+  }
+
+  componentDidMount() {
+    this._onKey = (e) => { if (e.key === "Escape") this.setState({ pinned: null, active: null }); };
+    window.addEventListener("keydown", this._onKey);
+    this._mq = window.matchMedia("(max-width: 860px)");
+    this._onMq = () => this.setState((st) => ({ narrow: this._mq.matches, open: this._mq.matches && !st.open ? "e1" : st.open }));
+    this._onMq();
+    this._mq.addEventListener("change", this._onMq);
+    const cards = Array.from(document.querySelectorAll('div[style*="1120px"] > div, div[style*="1120px"] > a')).filter((el) => el.tagName !== 'NAV');
+    cards.forEach((el) => el.classList.add('reveal'));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+    this._io = io;
+    cards.forEach((el) => io.observe(el));
+    setTimeout(() => { document.querySelectorAll('.reveal:not(.in)').forEach((el) => { if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('in'); }); }, 60);
+  }
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    window.removeEventListener("keydown", this._onKey);
+    if (this._mq) this._mq.removeEventListener("change", this._onMq);
+  }
+}
+</script>
+</body>
+</html>
